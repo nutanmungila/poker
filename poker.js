@@ -32,8 +32,9 @@ var rndNum;
 function randomNum(a,b){
 	  
 	 rndNum = Math.floor((Math.random() * b) + a);
+	 
      return rndNum;
-     console.log(rndNum);
+     
 }
 
 
@@ -42,7 +43,7 @@ function Hand() {
 	var hand = [];
 	for(var i=0;i<5;i++)
 	{
-		var r = randomNum(1,53);
+		var r = randomNum(1,51);
 		hand[i] = deck[r];
 
 	}
